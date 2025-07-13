@@ -1,17 +1,20 @@
 {
-	"formatter": {
-		"enabled": true,
-		"indentStyle": "space",
-		"indentWidth": 2,
-		"lineWidth": 80
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true
-		}
-	},
-	"files": {
-		"ignore": ["node_modules", "dist"]
-	}
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "stylistic/noUnknownAtRules": false,  
+      "stylistic/noEmptyRules": true,
+      "stylistic/noDuplicateDeclarations": true
+    }
+  },
+  "files": {
+    "ignore": ["node_modules", "dist"]
+  }
 }
