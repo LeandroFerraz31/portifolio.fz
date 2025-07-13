@@ -47,14 +47,15 @@ const App = () => {
 		<div className="min-h-screen bg-gray-900 text-white relative overflow-x-hidden">
 			{/* Animated Background */}
 			<div className="fixed inset-0 z-0">
-				<div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/20 to-purple-900/20"></div>
+				<div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/20 to-purple-900/20" />
 				<div className="absolute inset-0 opacity-30">
-					<div className="h-full w-full bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]"></div>
+					<div className="h-full w-full bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]" />
 				</div>
 				{/* Floating particles */}
 				<div className="absolute inset-0">
 					{[...Array(50)].map((_, i) => (
 						<div
+							// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 							key={i}
 							className="absolute w-1 h-1 bg-blue-400/20 rounded-full animate-pulse"
 							style={{
