@@ -9,7 +9,8 @@ interface Project {
 	gradient: string;
 	description: string;
 	tech: string[];
-	link: string;
+	linkProjeto?: string;
+	linkSite?: string;
 }
 
 interface ProjectCardProps {
@@ -61,18 +62,36 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
 					))}
 				</div>
 
-				<a
-					href={project.link}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="group/link inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-all duration-300"
-				>
-					<span>Ver projeto</span>
-					<FaExternalLinkAlt
-						size={16}
-						className="group-hover/link:translate-x-1 transition-transform"
-					/>
-				</a>
+				<div className="flex gap-4 flex-wrap">
+					{project.linkProjeto && (
+						<a
+							href={project.linkProjeto}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="group/link inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-all duration-300"
+						>
+							<span>Ver projeto</span>
+							<FaExternalLinkAlt
+								size={16}
+								className="group-hover/link:translate-x-1 transition-transform"
+							/>
+						</a>
+					)}
+					{project.linkSite && (
+						<a
+							href={project.linkSite}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="group/link inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-all duration-300"
+						>
+							<span>Acessar site</span>
+							<FaExternalLinkAlt
+								size={16}
+								className="group-hover/link:translate-x-1 transition-transform"
+							/>
+						</a>
+					)}
+				</div>
 			</div>
 		</div>
 	);
