@@ -1,4 +1,4 @@
-import { MessageCircle, ExternalLink } from "lucide-react";
+import { FaWhatsapp, FaExternalLinkAlt } from "react-icons/fa";
 import { contacts } from "../data/contacts";
 
 const Contact = () => {
@@ -23,7 +23,7 @@ const Contact = () => {
 						className="group relative px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/25"
 					>
 						<span className="flex items-center gap-3 justify-center">
-							<MessageCircle size={20} />
+							<FaWhatsapp size={20} />
 							WhatsApp
 						</span>
 					</a>
@@ -33,7 +33,7 @@ const Contact = () => {
 						className="group relative px-8 py-4 border-2 border-gray-600 rounded-full font-semibold text-gray-300 hover:text-white hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 backdrop-blur-sm"
 					>
 						<span className="flex items-center gap-3 justify-center">
-							<ExternalLink size={20} />
+							<FaExternalLinkAlt size={20} />
 							Email
 						</span>
 					</a>
