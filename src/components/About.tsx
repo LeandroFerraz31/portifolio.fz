@@ -53,8 +53,8 @@ const About = () => {
 				{/* Stats */}
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
 					{[
-						{ number: "50+", label: "Projetos" },
-						{ number: "3+", label: "Anos Exp." },
+						{ number: "40+", label: "Projetos GitHub" },
+						{ number: "2+", label: "Anos Exp." },
 						{ number: "100%", label: "Satisfação" },
 						{ number: "24/7", label: "Suporte" },
 					].map((stat) => (
