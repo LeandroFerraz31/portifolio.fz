@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.0.0",
   "private": true,
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,18 +12,24 @@
   },
   "dependencies": {
     "lucide-react": "^0.263.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.0.0",
+    "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "^24.0.13",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
-    "@vitejs/plugin-react": "^4.0.0",
+    "@vitejs/plugin-react": "^4.6.0",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
-    "vite": "^4.3.9"
-  }
+    "typescript": "^5.8.3",
+    "vite": "^7.0.4"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:LeandroFerraz31/portifolio.fz.git",
+  "author": "Leandro ferraz <leandro.santos@universo.univates.br>",
+  "license": "MIT"
 }

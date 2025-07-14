@@ -9,12 +9,12 @@
     "enabled": true,
     "rules": {
       "recommended": true,
-      "stylistic/noUnknownAtRules": false,  
-      "stylistic/noEmptyRules": true,
-      "stylistic/noDuplicateDeclarations": true
+      "nursery/noUnknownAtRules": "off",
+      "correctness/noUnknownAtRules": "off",
+      "stylistic/noUnknownAtRules": "off"
     }
   },
   "files": {
-    "ignore": ["node_modules", "dist"]
+    "ignore": ["node_modules", "dist", "*.css"]
   }
 }

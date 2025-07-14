@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Code, Zap, MessageCircle } from "lucide-react";
 import HeroButton from "../children/HeroButton";
 
+
 interface HeroProps {
   scrollToSection: (sectionId: string) => void;
 }
@@ -28,9 +29,9 @@ const Hero = ({ scrollToSection }: HeroProps) => {
     >
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Floating cursor effect */}
-        <div
+        {/*<div
           className="fixed w-4 h-4 bg-blue-400/50 rounded-full pointer-events-none z-50 transition-all duration-300"
-        />
+        />*/}
 
         <div className="relative">
           <div className="mb-8">

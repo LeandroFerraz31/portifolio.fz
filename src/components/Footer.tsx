@@ -3,15 +3,16 @@ import { contacts } from "../data/contacts";
 
 const Footer = () => {
 	return (
-		<footer className="relative border-t border-gray-800/50 bg-gray-900/50 backdrop-blur-md py-8 z-10">
+		<footer className="relative border-t border-gray-800/50 bg-gray-900/50 backdrop-blur-md py-8 z-10 px-6 md:pr-24">
+
 			<div className="max-w-7xl mx-auto px-6">
 				<div className="flex flex-col md:flex-row items-center justify-between gap-6 flex-wrap">
-					
+
 					<p className="text-gray-400 text-center md:text-left">
 						&copy; 2024 Leandro Ferraz. Crafted with ❤️ and ☕
 					</p>
 
-					<div className="flex gap-4">
+					<div className="flex gap-4 ">
 						<a
 							href={contacts.linkedin}
 							target="_blank"
