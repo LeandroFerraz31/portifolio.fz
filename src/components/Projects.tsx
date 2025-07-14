@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { projects } from "../data/projects";
-import ProjectCard from "../children/ProjectCard";
-import ShowMoreButton from "../children/ShowMoreButton";
+import ProjectCard from "../modules/ProjectCard";
+import ShowMoreButton from "../modules/ShowMoreButton";
 
 const Projects = () => {
   const [showAllProjects, setShowAllProjects] = useState(false);

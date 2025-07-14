@@ -1,7 +1,7 @@
 import { FaBars, FaTimes } from "react-icons/fa";
-import LF from "../children/LF";
-import NavButton from "../children/NavButton";
-import MobileMenu from "../children/MobileMenu";
+import LF from "../modules/LF";
+import NavButton from "../modules/NavButton";
+import MobileMenu from "../modules/MobileMenu";
 
 interface HeaderProps {
 	isMenuOpen: boolean;
