@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { FaCode, FaBolt, FaCommentDots } from "react-icons/fa";
 import HeroButton from "../modules/HeroButton";
-import VisitorCounter from "./VisitorCounter";
 
 interface HeroProps {
 	scrollToSection: (sectionId: string) => void;
@@ -90,7 +89,6 @@ const Hero = ({ scrollToSection }: HeroProps) => {
 							</div>
 						))}
 					</div>
-					<VisitorCounter /> {/* Aqui adiciona o contador */}
 				</div>
 			</div>
 		</section>
