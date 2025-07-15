@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { FaCode, FaBolt, FaCommentDots } from "react-icons/fa";
 import HeroButton from "../modules/HeroButton";
+import VisitorCounter from "./VisitorCounter";
 
 interface HeroProps {
 	scrollToSection: (sectionId: string) => void;
@@ -33,7 +34,6 @@ const Hero = ({ scrollToSection }: HeroProps) => {
 							🚀 Desenvolvedor Fullstack
 						</span>
 					</div>
-
 					<h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
 						<span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
 							Leandro
@@ -42,7 +42,6 @@ const Hero = ({ scrollToSection }: HeroProps) => {
 							Ferraz
 						</span>
 					</h1>
-
 					<div className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
 						<div className="flex items-center justify-center gap-2 mb-4">
 							<FaCode size={24} className="text-blue-400" />
@@ -59,7 +58,6 @@ const Hero = ({ scrollToSection }: HeroProps) => {
 							Soluções web modernas • APIs escaláveis • Experiências incríveis
 						</p>
 					</div>
-
 					<div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
 						<HeroButton
 							label="Ver Projetos"
@@ -73,7 +71,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
 							onClick={() => scrollToSection("contact")}
 						/>
 					</div>
-
+					
 					<div className="flex flex-wrap justify-center gap-6 opacity-60">
 						{[
 							"React",
@@ -92,6 +90,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
 							</div>
 						))}
 					</div>
+					<VisitorCounter /> {/* Aqui adiciona o contador */}
 				</div>
 			</div>
 		</section>
